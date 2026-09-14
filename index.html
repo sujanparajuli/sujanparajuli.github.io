@@ -90,9 +90,51 @@ footer{border-top:1px solid var(--line);padding:28px 0 38px;color:var(--muted);f
  .panel-head p{margin-top:12px}
  .foot{display:block}
 }
+
+/* Research-notebook identity: restrained color, no decorative motion */
+:root{--bg:#0b1118;--surface:#101923;--text:#f0f1ec;--muted:#aab6b5;--line:#2b3a44;--accent:#67c2b0;--copper:#d18a68;--blue:#6f9fc5}
+body{background:var(--bg)}
+.top{border-bottom-color:#334550}
+.brand{color:var(--text)}
+.brand b{color:var(--copper)}
+.hero{position:relative}
+.hero h1 span{color:var(--accent)}
+.signature-mark{width:min(360px,72%);height:44px;margin:-12px 0 19px}
+.signature-mark svg{display:block;width:100%;height:100%;overflow:visible}
+.signature-mark path{fill:none;stroke:var(--copper);stroke-width:2}
+.signature-mark circle{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.snapshot{border-left:3px solid var(--copper)}
+.stat:first-child strong{color:var(--accent)}
+.featured{background:#0f1821;border-top-color:#3c505c}
+.feature{padding-left:20px;padding-right:20px;border-left:3px solid transparent}
+.feature:nth-child(1){border-left-color:var(--accent);background:#111e27}
+.feature:nth-child(2){border-left-color:var(--blue)}
+.feature:nth-child(3){border-left-color:var(--copper)}
+.feature:nth-child(4){border-left-color:#b6a36a}
+.feature:nth-child(1) .label{color:var(--accent)}
+.feature:nth-child(2) .label{color:var(--blue)}
+.feature:nth-child(3) .label{color:var(--copper)}
+.feature:nth-child(4) .label{color:#c5ae70}
+.feature h2{color:var(--text)}
+.poster-link{color:var(--accent)}
+.tabs{background:rgba(11,17,24,.97)}
+.tab.active{color:var(--accent)}
+.panel h2{color:var(--copper)}
+.card h3{color:var(--text)}
+.card:nth-child(3n+2) h3{color:#b8cfe0}
+.card:nth-child(3n) h3{color:#d8ae98}
+.chip:nth-child(3n+1){border-color:#3d7067}
+.chip:nth-child(3n+2){border-color:#465f73}
+.chip:nth-child(3n){border-color:#6d5144}
+footer{background:#091017}
+@media(max-width:620px){
+ .snapshot{border-left:0;border-top:3px solid var(--copper)}
+ .feature{padding-left:14px;padding-right:14px}
+ .signature-mark{width:82%}
+}
 </style></head><body>
 <header class="wrap top"><a class="brand" href="#">SP<b>.</b></a><nav><a href="#profile">Profile</a><a href="mailto:sparaju1@norwich.edu">Norwich Email</a><a href="mailto:sujanparajuli786@gmail.com">Personal Email</a><a href="https://github.com/sujanparajuli">GitHub ↗</a></nav></header>
-<main id="profile"><section class="wrap hero"><div><h1>Sujan<br>Parajuli.</h1><p class="lead">Computer Science and Mathematics student at <strong>Norwich University</strong> interested in machine learning, statistics, combinatorics, and quantitative research. I enjoy moving between theoretical questions, computational experiments, and teaching.</p><div class="buttons"><button class="btn primary" onclick="showTab('research')">Explore my research</button><button class="btn" onclick="showTab('teaching')">Teaching experience</button><a class="btn" href="mailto:sparaju1@norwich.edu">Norwich email ↗</a><a class="btn" href="mailto:sujanparajuli786@gmail.com">Personal email ↗</a></div></div><aside class="snapshot"><div class="stat"><strong>3.9 GPA</strong><span>B.S. Computer Science + Mathematics</span></div><div class="stat"><strong>20+ students</strong><span>Supported through peer tutoring</span></div><div class="stat"><strong>May 2027</strong><span>Expected graduation</span></div></aside></section>
+<main id="profile"><section class="wrap hero"><div><h1>Sujan<br><span>Parajuli.</span></h1><div class="signature-mark" aria-hidden="true"><svg viewBox="0 0 360 44" role="img"><path d="M2 34 C42 32 54 12 91 17 S143 38 178 24 S232 6 263 17 S313 36 358 9"/><circle cx="91" cy="17" r="4"/><circle cx="178" cy="24" r="4"/><circle cx="263" cy="17" r="4"/></svg></div><p class="lead">Computer Science and Mathematics student at <strong>Norwich University</strong> interested in machine learning, statistics, combinatorics, and quantitative research. I enjoy moving between theoretical questions, computational experiments, and teaching.</p><div class="buttons"><button class="btn primary" onclick="showTab('research')">Explore my research</button><button class="btn" onclick="showTab('teaching')">Teaching experience</button><a class="btn" href="mailto:sparaju1@norwich.edu">Norwich email ↗</a><a class="btn" href="mailto:sujanparajuli786@gmail.com">Personal email ↗</a></div></div><aside class="snapshot"><div class="stat"><strong>3.9 GPA</strong><span>B.S. Computer Science + Mathematics</span></div><div class="stat"><strong>20+ students</strong><span>Supported through peer tutoring</span></div><div class="stat"><strong>May 2027</strong><span>Expected graduation</span></div></aside></section>
 <section class="wrap featured"><article class="feature primary"><div class="label">Work in Progress · Senior Capstone · Machine Learning</div><h2>NEPSE Stock Forecasting</h2><p>Building an end-to-end research pipeline for Nepal Stock Exchange data in Python and Jupyter. The project will compare regression and classification baselines with time-series methods and LSTM models, using careful train/test design and evaluation to avoid misleading forecasting results.</p><ul><li>Collect and clean historical NEPSE market data.</li><li>Engineer price, volume, return, and technical-indicator features.</li><li>Compare interpretable baselines with sequence models.</li><li>Document experiments reproducibly in GitHub and Jupyter notebooks.</li></ul><button class="btn" onclick="showTab('projects')" style="margin-top:14px">View capstone details</button></article><article class="feature"><div class="label">Completed Research · Healthcare ML</div><h2>Emergency Department Cost Prediction</h2><p>Developed and evaluated an XGBoost model using HCUP NEDS 2016 data, with data cleaning, feature encoding, held-out testing, model metrics, and feature-importance analysis.</p><a class="poster-link" href="assets/ml-poster.jpg" target="_blank"><span>View machine-learning research poster ↗</span></a></article><article class="feature"><div class="label">Mathematical Research · Weintz Fellowship</div><h2>Vertex Magic Trees</h2><p>Investigated vertex-magic total labelings through structural identities, computation, counterexamples, and averaging arguments with Prof. Dan McQuillan.</p><a class="poster-link" href="assets/vmtl-poster.jpg" target="_blank"><span>View mathematics research poster ↗</span></a><br><a class="poster-link" href="assets/vmtl-averaging-equation-research-note.pdf" target="_blank"><span>Read averaging-equation research note ↗</span></a></article><article class="feature teach"><div class="label">Teaching · CASA, Norwich</div><h2>Peer & Class Tutor</h2><p>Tutored 20+ students in Calculus I, Calculus II, and Elementary Statistics through individual and small-group support, emphasizing intuition and independent problem solving.</p><button class="btn" onclick="showTab('teaching')" style="margin-top:14px">View teaching experience</button></article></section>
 <div class="tabs"><div class="wrap tabbar" role="tablist"><button class="tab active" data-tab="research">Research</button><button class="tab" data-tab="teaching">Teaching</button><button class="tab" data-tab="projects">Projects</button><button class="tab" data-tab="experience">Experience</button><button class="tab" data-tab="skills">Skills & Leadership</button></div></div>
 <section class="wrap panels">
