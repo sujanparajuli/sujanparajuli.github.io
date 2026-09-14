@@ -7,7 +7,7 @@
 <meta name="description" content="Portfolio of Sujan Parajuli: machine learning, mathematical research, statistics, teaching, and computing.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#1e1e1e;--bg2:#242424;--panel:#292929;--line:#3b3b3b;--text:#f4f4f2;--muted:#a8a8a4;--white:#fff;--max:1060px}
 *{box-sizing:border-box}
@@ -24,7 +24,7 @@ a{color:inherit}
 .hero{min-height:690px;display:grid;grid-template-columns:1.3fr .75fr;gap:80px;align-items:center;padding:72px 0 106px;position:relative}
 .hero-copy{max-width:620px}
 .intro{font-size:.86rem;font-weight:600;margin:0 0 18px}
-h1{font-size:clamp(3.2rem,6vw,5.6rem);line-height:.98;letter-spacing:-.065em;margin:0 0 26px;max-width:760px}
+h1{font:700 clamp(4.4rem,8.5vw,7.4rem)/.8 "Space Grotesk",Inter,sans-serif;letter-spacing:-.075em;margin:0 0 30px;max-width:760px}.hero-role{font:500 clamp(1.45rem,2.4vw,2.1rem)/1.14 "Space Grotesk",Inter,sans-serif;letter-spacing:-.035em;margin:0 0 18px;max-width:650px;color:#e8e8e5}
 .hero p{color:var(--muted);max-width:600px;margin:0}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .button{display:inline-flex;align-items:center;gap:9px;background:white;color:#151515;text-decoration:none;padding:10px 16px;font-size:.75rem;font-weight:700;border:1px solid white}
@@ -40,12 +40,12 @@ section{scroll-margin-top:30px}
 .section{padding:86px 0;border-top:1px solid var(--line)}
 .section-head{display:grid;grid-template-columns:210px 1fr;gap:42px;margin-bottom:42px}
 .section-number{color:#777;font-size:.72rem;font-weight:600}
-.section h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1;letter-spacing:-.055em;margin:0}
+.section h2{font:600 clamp(2.2rem,4vw,3.7rem)/.96 "Space Grotesk",Inter,sans-serif;letter-spacing:-.06em;margin:0}.section h2:after{content:"";display:block;width:42px;height:2px;background:#888;margin-top:17px}
 .section-lead{color:var(--muted);max-width:590px;margin:12px 0 0}
 .work-list{border-top:1px solid #4a4a4a}
 .work{display:grid;grid-template-columns:210px 1fr auto;gap:42px;padding:30px 0;border-bottom:1px solid var(--line)}
 .work-meta{color:#888;font-size:.72rem}
-.work h3{font-size:1.25rem;letter-spacing:-.025em;margin:0 0 7px}
+.work h3{font:600 1.32rem/1.2 "Space Grotesk",Inter,sans-serif;letter-spacing:-.035em;margin:0 0 7px}
 .work h4{font-size:.74rem;color:#aaa;font-weight:500;margin:0 0 10px}
 .work p{color:var(--muted);margin:0;max-width:650px}
 .links{display:flex;gap:14px;flex-wrap:wrap;margin-top:14px}
@@ -54,14 +54,14 @@ section{scroll-margin-top:30px}
 .index-no{font-size:1.8rem;font-weight:700;color:#4e4e4e}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .block{background:var(--panel);padding:28px;min-height:190px;border:1px solid #333}
-.block h3{margin:0 0 10px;font-size:1.05rem}
+.block h3{margin:0 0 10px;font:600 1.12rem "Space Grotesk",Inter,sans-serif;letter-spacing:-.025em}
 .block p,.block li{color:var(--muted)}
 .block p{margin:0}
 .block ul{margin:10px 0 0;padding-left:18px}
 .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#3b3b3b;border:1px solid #3b3b3b}
 .project{background:var(--bg);padding:30px;min-height:250px}
 .project .project-no{color:#666;font-size:.7rem}
-.project h3{font-size:1.3rem;margin:36px 0 9px}
+.project h3{font:600 1.38rem/1.15 "Space Grotesk",Inter,sans-serif;letter-spacing:-.035em;margin:36px 0 9px}
 .project p{color:var(--muted);margin:0}
 .project a{display:inline-block;margin-top:20px;font-size:.72rem;font-weight:700;text-decoration:none;border-bottom:1px solid white}
 .resume-box{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;background:white;color:#161616;padding:38px}
@@ -90,7 +90,7 @@ footer{border-top:1px solid var(--line);padding:42px 0 60px;color:#858581;font-s
  .nav-links a:not(.contact-nav){display:none}
  .hero{min-height:auto;padding-bottom:100px}
  .portrait{width:165px}
- h1{font-size:3rem}
+ h1{font-size:3.65rem}
  .section{padding:64px 0}
  .section-head,.work{grid-template-columns:1fr;gap:9px}
  .work{padding:25px 0}
@@ -117,8 +117,9 @@ footer{border-top:1px solid var(--line);padding:42px 0 60px;color:#858581;font-s
 <main>
 <section class="shell hero" id="home">
 <div class="hero-copy">
-<p class="intro">Hi, I am Sujan Parajuli.</p>
-<h1>Computer Science & Mathematics student.</h1>
+<p class="intro">Computer Science · Mathematics · Norwich University</p>
+<h1>Sujan<br>Parajuli.</h1>
+<h2 class="hero-role">Machine-learning researcher, mathematician, and tutor.</h2>
 <p>I study machine learning, statistics, combinatorics, and quantitative methods at Norwich University. My work connects real-world data, computational experiments, mathematical reasoning, and teaching.</p>
 <div class="hero-actions">
 <a class="button" href="mailto:sparaju1@norwich.edu">Email me ↗</a>
