@@ -1,9 +1,11 @@
 # Repbook
 
-[Open the gym tracker](https://sujan-repbook.sujanparajuli786.chatgpt.site)
+[Open your gym tracker](https://sujan-repbook.sujanparajuli786.chatgpt.site)
 
-A mobile-friendly beginner workout journal: exercises, individual sets, weights, reps, lb/kg, private saved history, and heaviest-set progress charts. Source is in `source/`. Hosted with Cloudflare Workers and D1 through Sites; GitHub Pages entry redirects to the private app because Pages cannot run a database backend. No personal workout data is stored in this repository.
+Black-and-white workout journal with Push, Pull and Leg routines; separate weight and rep inputs for every set; lb/kg; private saved history; weekly Monday–Sunday tracking and exercise progress charts. No photos.
 
-Gym image source: https://elitefitnesspr.co/hero_background.png
+Push: incline dumbbell press, flyes, lateral raise, shoulder press, triceps pushdown.
+Pull: T-bar row, row, lat pulldown.
+Legs: squat, leg press, Bulgarian split squat, hamstring curl, leg extension, Romanian deadlift (RDL), biceps curl.
 
-Install with pnpm install. Configure a logical D1 DB binding, generate migrations with pnpm db:generate, and build with pnpm build. Deployment configuration and authentication are managed by Sites.
+Source is in source/. The app uses Cloudflare Workers and D1 through Sites. GitHub Pages redirects to the private app; personal workout data is not stored in this repository.
